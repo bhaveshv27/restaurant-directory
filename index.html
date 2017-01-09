@@ -323,13 +323,17 @@
 
         <section id="contact">
             <div class="map">
-                <iframe src="https://www.google.com/maps/place/130+N+Main+St,+Logan,+UT+84321/@41.7339201,-111.836652,17z/data=!3m1!4b1!4m5!3m4!1s0x87547e0d228ea6df:0x361c7f310225703e!8m2!3d41.7339201!4d-111.8344633" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                
                 <style>
                 #map {
                         height: 400px;
                         width: 100%;
+                        frameborder="0";
+                        style="border:0";
+                        
                      }
                 </style>
+                <div id="map"></div>
                 <script>
                 function initMap() 
                     {
@@ -338,6 +342,7 @@
                             {
                                 zoom: 18,
                                 center: uluru
+                                
                             });
                             var marker = new google.maps.Marker
                             ({                            
